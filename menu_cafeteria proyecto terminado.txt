@@ -1,0 +1,114 @@
+Algoritmo menu_cafeteria
+	definir a,b,c como entero 
+	definir total Como Real
+	definir p como real 
+	definir matri Como Caracter
+	a = 0
+	total = 0
+	x = 0
+	p = b
+	
+	Escribir "Ingresa tu nombre"
+	Leer matri
+	Escribir "##### Hola, Bienvenidx "  matri " elige una opcion #####"
+	
+	mientras a <> 3 Hacer
+		escribir "1 =platillos"
+		escribir "2 = pagar"
+		escribir "3 = salir"
+		leer a 
+		si a == 1 entonces 
+			b = 0
+			mientras b <> 8 hacer 
+				limpiar pantalla 
+				Escribir "########## M E N U ##########";
+				Escribir"----------------";
+				
+				Escribir "1. Paquete 1: Lonche adobada con bebida........ $55 PESOS ";
+				Escribir "2. Paquete 2: Lonche bistec con bebida......... $55 PESOS "; 
+				Escribir "3. Paquete 3: Lonche adobada sin bebida......... $40 PESOS ";
+				escribir "4. Paquete 4: Lonche bistec sin bebida......... $40 PESOS ";
+				Escribir "5. Paquete 5: Torta ahogada con bebida......... $60 PESOS ";
+				Escribir "6. Paquete 6: Torta ahogada sin bebida......... $45 PESOS ";
+				Escribir "7. Paquete 7: Bebida......... $18 PESOS ";
+				escribir "8 = salir"
+				leer b
+				limpiar pantalla 
+				si b == 1 entonces 
+					Escribir " Elegir bebida: "
+					Escribir "1. Pepsi (500  ml)";
+					Escribir "2. SevenUp (500 ml)";
+					Escribir "3. Coca Cola (taparosca)";
+					Escribir "4. Sidral Mundet (500 ml)";
+					Escribir "5. Agua fresca (500 ml)"
+					Escribir "Elige una opcion";
+					total = total + 55
+					escribir precio  55
+					Escribir " ###### !GRACIAS POR SU COMPRA, PROVECHO! ######"
+					leer b
+		
+				sino 
+					si b == 2 entonces 
+						Escribir " Elegir bebida: "
+						Escribir "1. Pepsi (500  ml)";
+						Escribir "2. SevenUp (500 ml)";
+						Escribir "3. Coca Cola (taparosca)";
+						Escribir "4. Sidral Mundet (500 ml)";
+						Escribir "5. Agua fresca (500 ml)"
+						Escribir "Elige una opcion";
+						total = total + 55 
+						escribir precio 55 
+						escribir "###### !GRACIAS POR SU COMPRA, PROVECHO! ######"
+						leer p
+					sino 
+						si b == 3 Entonces
+							total = total + 40
+							escribir precio 40 
+							leer p
+							sino
+							si b == 4 entonces 
+								total = total + 40
+								escribir precio 40 
+								escribir " ###### !GRACIAS POR SU COMPRA, PROVECHO! ######"
+								leer p
+							sino 
+								si b == 5 entonces 
+									Escribir " Elegir bebida: "
+									Escribir "1. Pepsi (500  ml)";
+									Escribir "2. SevenUp (500 ml)";
+									Escribir "3. Coca Cola (taparosca)";
+									Escribir "4. Sidral Mundet (500 ml)";
+									Escribir "5. Agua fresca (500 ml)"
+									Escribir "Elige una opcion";
+									total = total + 60 
+									escribir precio 60
+									escribir " ###### !GRACIAS POR SU COMPRA, PROVECHO! ######"
+									leer p
+									sino
+									si b == 6 entonces 
+										total = total + 45 
+										escribir precio 45
+										escribir " ###### !GRACIAS POR SU COMPRA, PROVECHO! ######"
+										leer p
+										sino
+										si b == 7 Entonces
+											total = total + 18 
+											escribir precio 18
+											escribir " ###### !GRACIAS POR SU COMPRA, PROVECHO! ######"
+											leer p
+										FinSi
+									FinSi
+								FinSi
+							FinSi
+						FinSi
+					FinSi
+				FinSi
+			FinMientras
+		sino 
+			si a == 2 entonces 
+				escribir "el total a pagar es: $", total 
+				escribir " ###### !GRACIAS POR SU COMPRA, PROVECHO! ######"
+			FinSi
+		FinSi
+	FinMientras
+FinAlgoritmo
